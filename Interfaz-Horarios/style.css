@@ -86,6 +86,7 @@ section.form form .boton:hover{
 
 section.table {
     margin-top: 5em;
+    display: none;
 }
 
 section.table .picture {
@@ -110,4 +111,13 @@ section.table table th{
     padding: 0.5em 1em;
     text-align: center;
     border: 0.10px solid black;
+}
+
+footer {
+    /* position: absolute; */
+    width: 100%;
+    margin-top: 5rem;
+    padding: 1.5rem 0;
+    background-color: #3895ea;
+    bottom: 0;
 }
