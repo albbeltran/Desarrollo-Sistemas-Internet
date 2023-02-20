@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    background: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    padding: 1.5rem 0;
+    background-color: #3895ea;
+}
+
+header .title {
+    margin: 0;
+}
+
+section.text {
+    margin-top: 5em;
+}
+
+section.form {
+    margin-top: 2em;
+}
+
+section.form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+}
+
+section.form form .container__select select {
+    margin-left: 5px;
+    border:2px solid #cecece;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    color: #979797;
+    margin-bottom: 1rem;
+}
+
+section.form form input[type="text"] {
+    border:2px solid #cecece;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    color: #a4a4a4;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+section.form form input[type="text"]:focus {
+    border: 2px solid #3895ea;
+    outline: none
+}
+
+section.form form .boton{
+    margin: auto;
+    margin-top: 0.5rem;
+    background: #3895ea;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+}
+
+section.form form .boton:hover{
+    background: #387bea;
+}
+
+section.table {
+    margin-top: 5em;
+}
+
+section.table .picture {
+    width: 75px;
+    height: auto;
+    margin: auto;
+}
+
+section.table .picture img {
+    width: 100%;
+}
+
+section.table table {
+    border: 1px black;
+    margin: auto;
+    margin-top: 2em;
+    border-collapse: collapse;
+}
+
+section.table table td,
+section.table table th{
+    padding: 0.5em 1em;
+    text-align: center;
+    border: 0.10px solid black;
+}
