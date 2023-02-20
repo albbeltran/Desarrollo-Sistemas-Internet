@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="title">Consulta de horario</h1>
+        </div>
+    </header>
+
+    <section class="text">
+        <div class="container">
+            <p class="paragraph">
+                Bienvenido alumno(a).
+                <br><br>
+                Por favor ingresa tus datos (nombre, apellido y expediente) para consultar tu horario.
+            </p>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container">
+            <form action="">
+                <div class="container__select">
+                    <label for="genero">Género</label>
+                    <select name="genero" id="genero">
+                        <option value="femenino">Femenino</option>
+                        <option value="masculino">Masculino</option>
+                    </select>
+                </div>
+
+                <input class="form__input" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input class="form__input" type="text" name="apellido" id="apellido" placeholder="Apellido">
+                <input class="form__input" type="text" name="id" id="id" placeholder="Expediente">
+
+                <input class="boton" type="submit" value="Consultar">
+            </form>
+        </div>
+    </section>
+
+    <section class="table">
+        <div class="container">
+            <div class="picture">
+                <img src="https://cdn.onlinewebfonts.com/svg/img_511291.png" alt="Foto del alumno">
+            </div>
+
+            <table>
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes y Miércoles</th>
+                    <th>Salón</th>
+                    <th>Martes y Jueves</th>
+                    <th>Salón</th>
+                </tr>
+
+                <tr>
+                    <td>11:00 - 13:00</td>
+                    <td>Análisis y Diseño de Software</td>
+                    <td>D06</td>
+                    <td>Redes II</td>
+                    <td>LAB-02</td>
+                </tr>
+
+                <tr>
+                    <td>13:00 - 15:00</td>
+                    <td>Administración de base de datos</td>
+                    <td>A12</td>
+                    <td>Base de datos II</td>
+                    <td>A02</td>
+                </tr>
+
+                <tr>
+                    <td>15:00 - 17:00</td>
+                    <td>Desarrollo de Sistemas en Internet</td>
+                    <td>A14</td>
+                    <td>Teoría de la Computación</td>
+                    <td>LAB-02</td>
+                </tr>
+
+                <tr>
+                    <td>17:00 - 19:00</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Estructura de datos<td>
+                    <td>A20</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>
