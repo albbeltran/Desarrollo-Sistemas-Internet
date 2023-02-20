@@ -30,7 +30,7 @@
         <div class="container">
             <form action="" id="form">
                 <div class="container__select">
-                    <label for="genero">Género</label>
+                    <label for="genero">Sexo</label>
                     <select name="genero" id="genero">
                         <option value="femenino">Femenino</option>
                         <option value="masculino">Masculino</option>
@@ -103,12 +103,12 @@
     <script>
         let tableContainer = document.getElementById('table');
         let form = document.getElementById('form');
+        let footer = document.getElementsByTagName('footer')[0];
 
         form.addEventListener('submit', (e) => {
-
-
             e.preventDefault();
             tableContainer.style.display = 'block';
+            footer.style.position = 'relative';
         })
 
     </script>
