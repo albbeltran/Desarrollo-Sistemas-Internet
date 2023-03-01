@@ -1,0 +1,37 @@
+body{
+    background-color:  orange;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contenedor .cajita-texto{
+    background-color: rgba(139, 127, 220, 0.507);
+    padding:15px;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+}
+.contenedor .imagen img{
+    width: 200px;
+    height: 160px;
+    transition: transform .98s ease-in-out;
+}
+/*ease
+ease-in
+ease-in-out
+ease-ou*/
+.contenedor .imagen .cajita-texto .texto{
+    text-align: center;
+}
+.contenedor .imagen:hover .cajita-texto{ 
+    display: block;
+    transform: translateY(-150px);
+}
+.contenedor .imagen:hover img{
+    transform: translateY(-50px);
+}
