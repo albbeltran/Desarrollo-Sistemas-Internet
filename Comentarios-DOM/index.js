@@ -5,6 +5,8 @@ let container = document.getElementById('container');
 let counterText = document.getElementById('counter');
 let counter = -1;
 
+let commentsArr = [];
+
 updateCounter();
 
 input.addEventListener('keypress', (e) => {
@@ -16,6 +18,8 @@ input.addEventListener('keypress', (e) => {
             like: 0
         }
 
+        commentsArr.push(newComment);
+
         e.target.value = "";
 
         createNodeComment(newComment);
@@ -23,6 +27,7 @@ input.addEventListener('keypress', (e) => {
 });
 
 function createNodeComment(comment) {
+
     let box = document.createElement('div');
     box.className = 'box';
 
@@ -34,7 +39,8 @@ function createNodeComment(comment) {
 
     box.appendChild(text);
     box.appendChild(btn);
-    container.appendChild(box);
+
+    container.insertBefore(box, container.children[0]);
 
     updateCounter();
 
