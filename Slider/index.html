@@ -20,6 +20,29 @@
         <button class="boton1">Anterior</button>
         <button class="boton2">Siguiente</button>
     </div>
+
+    <script>
+        let antBtn = document.querySelector('.boton1');
+        let sigBtn = document.querySelector('.boton2');
+        let imagen = document.querySelector('.img');
+
+        let arreglo = ['img/foto1.jpg', 'img/foto2.jpg', 'img/foto3.jpg', 'img/foto5.jpg'];
+        let contador = 0;
+
+        antBtn.addEventListener('click', () => {
+            if (contador == 0) contador = 4;
+            contador--;
+
+            imagen.setAttribute('src', arreglo[contador]);
+        })
+
+        sigBtn.addEventListener('click', () => {
+            contador++;
+            if (contador === arreglo.length) contador = 0;
+
+            imagen.setAttribute('src', arreglo[contador]);
+        })
+    </script>
 </body>
 
 </html>
