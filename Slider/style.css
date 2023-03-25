@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+img:not(.img) {
+    width: 100%;
+}
+
+img {
+    display: block;
+}
+
+.slider-container {
+    border: 5px solid black;
+    width: 100vh;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    /*esco*/
+    margin-top: 4rem;
+    justify-content: center;
+}
+
+.img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.BOTONES {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.75rem;
+}
+
+.boton1,
+.boton2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.75rem;
+    cursor: pointer;
+    margin: 0 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
